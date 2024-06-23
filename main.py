@@ -1,5 +1,8 @@
 from langchain.llms import GooglePalm
-api_key = "AIzaSyCHVBKfVdoShiS20wg8cfdOoRKlVoWVB2Y"
+import os 
+
+api_key = os.getenv("api_key")
+
 llm = GooglePalm(google_api_key=api_key, temperature=0.5)
 import streamlit as st
 
