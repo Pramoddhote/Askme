@@ -1,9 +1,13 @@
 from langchain.llms import GooglePalm
-import os 
+import os
+from dotenv import load_dotenv
 
-api_key = os.getenv("api_key")
+# Load environment variables from the .env file
+load_dotenv()
 
-llm = GooglePalm(google_api_key=api_key, temperature=0.5)
+API_KEY = os.getenv("API_KEY")
+
+llm = GooglePalm(google_api_key=API_KEY, temperature=0.5)
 import streamlit as st
 
 
