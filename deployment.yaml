@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: askme-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: askme
+  template:
+    metadata:
+      labels:
+        app: askme
+    spec:
+      containers:
+      - name: askme
+        image: pramoddhote/testfile:latest
+        ports:
+        - containerPort: 8501
