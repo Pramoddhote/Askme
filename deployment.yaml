@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: askme
-        image: pramoddhote/testfile:latest
+        image: pramoddhote/testfile:v1
         ports:
         - containerPort: 8501
