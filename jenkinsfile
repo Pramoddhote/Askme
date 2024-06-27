@@ -1,0 +1,69 @@
+pipeline {
+    agent any
+
+    environment {
+        REPO_URL = 'https://github.com/Pramoddhote/Askme.git'
+        K8S_DEPLOYMENT = 'deployment.yaml'
+        K8S_SERVICE = 'service.yaml'
+        K8S_SERVICEACCOUNT = 'serviceAccount.yaml'
+        K8S_ROLE = 'role.yaml'
+        K8S_ROLEBINDING = 'roleBinding.yaml'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: "${env.REPO_URL}", branch: 'master'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    echo 'Skipping build stage since the Docker image is already available on Docker Hub'
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                script {
+                    echo 'Running tests...'
+                    // Add your test commands here, for example:
+                    // sh 'pytest tests'
+                }
+            }
+        }
+
+        stage('Deploy to Minikube') {
+            steps {
+                script {
+                    sh 'sudo kubectl apply -f ${K8S_SERVICEACCOUNT}'
+                    sh 'sudo kubectl apply -f ${K8S_ROLE}'
+                    sh 'sudo kubectl apply -f ${K8S_ROLEBINDING}'
+                    sh 'sudo kubectl apply -f ${K8S_DEPLOYMENT}'
+                    sh 'sudo kubectl apply -f ${K8S_SERVICE}'
+                }
+            }
+        }
+
+        stage('Post-Deployment Verification') {
+            steps {
+                script {
+                    echo 'Verifying deployment...'
+                    // Add your verification commands here, for example:
+                    // sh 'kubectl rollout status deployment/streamlit-deployment'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment successful'
+        }
+        failure {
+            echo 'Deployment failed'
+        }
+    }
+}
