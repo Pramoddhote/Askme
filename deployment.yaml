@@ -17,3 +17,5 @@ spec:
         image: pramoddhote/testfile:v1
         ports:
         - containerPort: 8501
+      spec:
+      serviceAccountName: myAccount
