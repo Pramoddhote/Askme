@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: askme-deployment
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: askme
@@ -16,6 +16,4 @@ spec:
       - name: askme
         image: pramoddhote/testfile:v1
         ports:
-        - containerPort: 8501
-      spec:
-      serviceAccountName: myAccount
+        - containerPort: 8080
