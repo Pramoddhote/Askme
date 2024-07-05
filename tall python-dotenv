@@ -1,0 +1,79 @@
+[33mcommit c4892d2af1f4508eb2a12efa8976424ad9a9abc2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Fri Jul 5 22:56:39 2024 +0530
+
+    api-key
+
+[33mcommit 2d3263c8caac414a41ee8cd9fac4e3bd3bcb61d8[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Thu Jun 27 14:54:21 2024 +0530
+
+    modified deployment and serviceaccount files
+
+[33mcommit 921f09018f21a2a508b08597a172c1bc3267ef23[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Thu Jun 27 13:45:39 2024 +0530
+
+    addes jenkinsfile
+
+[33mcommit 9feb7644c39fc36c202052dd5434552f75ba4a8d[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Thu Jun 27 13:14:30 2024 +0530
+
+    added service account , role and roleBinding file
+
+[33mcommit b72f892f4c3faf728af3129ef81e9929568eed37[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Mon Jun 24 15:32:34 2024 +0530
+
+    modified some files
+
+[33mcommit 0ddb47cb6531f0ade98c31cdd173c3ee9ac40c72[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Mon Jun 24 15:26:32 2024 +0530
+
+    added dockerfile deploymnet & service file
+
+[33mcommit f64443c5a43b6a2f0b0ce74ce059471623458d9f[m
+Author: Pramod dhote <pramoddhote21.pd@gmail.com>
+Date:   Sun Jun 23 22:35:04 2024 +0530
+
+    pushing .env and .ignore to github
+
+[33mcommit b91c916e1ecfff863bdbd035a8ed3cca0c609024[m
+Author: Pramod dhote <pramoddhote21.pd@gmail.com>
+Date:   Sun Jun 23 22:06:59 2024 +0530
+
+    modified .env and .gitignore
+
+[33mcommit 87c37f5c064a3d7e0b08530443cb6417da368b45[m
+Author: Pramod dhote <pramoddhote21.pd@gmail.com>
+Date:   Sun Jun 23 21:52:26 2024 +0530
+
+    added .env and .gitignore file for apikey
+
+[33mcommit 86bb9f9cd9f08d50185aa1dcfc5626657a804be7[m
+Author: Pramod Dhote <113097581+Pramoddhote@users.noreply.github.com>
+Date:   Fri May 17 12:39:08 2024 +0530
+
+    Update requirements.txt
+
+[33mcommit 6a756a7774875c9d6ab1eafcb21e03db2e2fe7e3[m
+Author: Pramod Dhote <113097581+Pramoddhote@users.noreply.github.com>
+Date:   Fri May 17 12:32:11 2024 +0530
+
+    Create README.md
+    
+    added readme by pramod
+
+[33mcommit 87625cf56902e47bb662bb71290205834530a2e4[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Fri May 17 12:18:15 2024 +0530
+
+    all done
+
+[33mcommit 6a7b59072206809c389e8bb0e537ec6eb4385453[m
+Author: Pramod <pramoddhote21.pd@gmail.com>
+Date:   Fri May 17 11:46:33 2024 +0530
+
+    this is first commit by pramod
