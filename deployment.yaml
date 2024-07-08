@@ -16,4 +16,4 @@ spec:
       - name: askme
         image: pramoddhote/askme:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
